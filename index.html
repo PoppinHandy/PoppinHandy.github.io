@@ -1,5 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Page</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lobster'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +22,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="author" content="Andy Pham">
     <title>Andy Pham Portfolio</title>
-
+  <script src="https://use.fontawesome.com/0ee42d935d.js"></script>
     <!-- Bootstrap -->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,12 +37,118 @@
 	
   </head>
   <body>
-	<ul class ="nav nav-pills">
-		<li role= "presentation" class="active"> <a href = "https://poppinhandy.github.io/">Home</a></li>
-		<li role= "presentation"> <a href = "https://poppinhandy.github.io/About">About Me</a></li>
-	</ul>
+    <nav class = "navbar custom-bg">
+      <div class = "container-fluid">
+        <div class ="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+          <a class="navbar-brand name-header">Andy Pham | apham@ucdavis.edu</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav nav-pills navbar-nav navbar-center">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Visualizations</a></li>
+          <li><a href="#">Projects</a></li> 
+          <li><a href="#">In Progress</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/PoppinHandy"><span class="fa fa-github"> Github</span></a></li>
+          <li><a href="https://www.linkedin.com/in/handy94/"><span class="fa fa-linkedin-square"></span> LinkedIn</a></li>
+        </ul>
+      </div>
+     </div> <!-- Container fluid-->
+    </nav> <!--END NAV BAR-->
+    <div = "container-fluid">
+       <div class = "col-md-2">
+        <img class="img-responsive img-rounded center-block" src="https://github.com/PoppinHandy/PoppinHandy.github.io/blob/master/Hakone_Gardens_5.jpg"></img>
+      </div>
+      <div class = "row">
+        <div class = "col-md-4">
+          <div class = "panel panel-info">
+            <div class="panel-heading">About Me</div>
+            <div class="panel-body">
+              <h3> Professional </h3>
+              <p> As a programmer, bioinformatician, and aspiring data scientist, I am a UC Davis graduate looking to merge technology with healthcare. I have about 2 years of bioinformatics programming experience from 3 different labs and have a Computer Science Minor. My strongest language is Python, but I have a deep level of understanding of Object Oriented programming and data structures. <u>I am currently looking for jobs as an entry level Bioinformatician, Software Developer, or Data Analyst.</u> </p>
+              
+              <h3>Personal</h3>
+              <p> In my free time, I like to freestyle dance in a style called Popping, and practice tricking. I also am currently learning game development, using both Unity 3D and Blender.</p>
+            </div>
+          </div>
+        </div> <!--end about me panel column-->
+        <div class="col-md-4">
+          <div class = "panel panel-info">
+            <div class="panel-heading">Technical Skills</div>
+            <div class="panel-body">
+              <p> Python </p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">3 years</div>
+              </div>
+              
+              <p> Java </p>
+              <div class = "progress">
+                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">2 years</div>
+              </div>
+              
+              <p> Bash </p>
+              <div class = "progress">
+                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">2 years</div>
+              </div>
+              
+              <p> Vim </p>
+              <div class = "progress">
+                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">2 years</div>
+              </div>
+              
+              <p> C++ </p>
+              <div class = "progress">
+                <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">1 year</div>
+              </div>
+              
+            </div> <!--end panel body -->
+          </div>
+        </div><!--end technical skills column-->
+      </div> <!-- end row -->
+    
+      <div class = "row">
+        <div class = "col-md-10 col-centered">
+          <div class = "panel panel-info">
+            <div class="panel-heading">Work Experience</div>
+            <div class="panel-body">
+              <div class="workExpHeader">UC San Francisco, Immunoprofiler Department <span class= "pull-right"> Bioinformatics Intern </span></div>
+              <div class="workExpHeader"> 1/2017 - 3/2017</div>
+              <ul> 
+                <li>Assisted in data mining of cancer data, running dimension-reduction and clustering of raw fluorescence values</li>
+                <li>Constructed data visualizations in the form of heatmaps, scatter plots, and dot plots for analysis of flow cytometry data </li>
+                <li>Parsed flow cytometry data from XML files for quality control and metrics statistics</li>
+              </ul> 
+              <div class="workExpHeader">UC Davis, Plant Pathology Department <span class= "pull-right"> Bioinformatics Intern </span></div>
+              <div class="workExpHeader"> 7/2016 - 1/2016</div>
+              <ul> 
+                <li>Constructed bioinformatics pipelines and scripts in Python to find the identity of a plant virus by analyzing metagenomics data.</li>
+                <li>Creeated Python scripts to work with and parse large Illumina walnut FASTQ files. </li>
+                <li>Worked with online tools like Galaxy and CLC Bio to perform bioinformatics analysis on multiple genomic sequence files.</li>
+              </ul> 
+              <div class="workExpHeader">UC Davis, Plant Sciences Department <span class= "pull-right"> Bioinformatics Intern </span></div>
+              <div class="workExpHeader"> 6/2015 - 7/2016</div>
+              <ul> 
+                <li>Used Linux OS and bash shell. Set up CVS for local program file storage and version tracking.</li>
+                <li>Uploaded genomes onto the web and modified a webpage on the lab website</li>
+              </ul>
+            </div><!--end panel-body-->
+          </div> <!--end panel panel-info-->
+        </div> <!-- end col-md-8 -->
+      </div><!-- end row -->
+    </div> <!-- end container-fluid -->
+  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
+</html>
+  
+  
+</body>
 </html>

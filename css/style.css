@@ -1,0 +1,56 @@
+.portfolio-image{
+  border-radius: 8px;
+}
+.custom-bg{
+  background-color: lightgrey;
+  border-radius: 25px;
+}
+
+.name-header{
+  font-variant: small-caps;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  padding-left: 20px;
+  font-size: 100%;
+}
+
+.nav .nav-pills{
+  text-align: center;
+}
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: white;
+ }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.panel-heading{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.workExpHeader{
+  font-size: 15px;
+  font-weight: bold;
+  color: CornflowerBlue;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
